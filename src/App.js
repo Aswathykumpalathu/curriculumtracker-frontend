@@ -1,11 +1,17 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Login from './components/Login';
+import Register from './components/Register';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Curriculum tracker</h1>
-    </div>
+  <BrowserRouter>
+  <Routes>
+    <Route path='/' exact element={<Login/>}/>
+    <Route path='/register' exact element={<Register/>}/>
+  </Routes>
+  </BrowserRouter>
   );
 }
 
