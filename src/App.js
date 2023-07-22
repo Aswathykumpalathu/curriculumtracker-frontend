@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Login from './components/Login';
@@ -23,6 +24,22 @@ function App() {
      </Routes>
      </BrowserRouter>
     </div>
+=======
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Login from './components/Login';
+import Register from './components/Register';
+
+function App() {
+  return (
+  <BrowserRouter>
+  <Routes>
+    <Route path='/' exact element={<Login/>}/>
+    <Route path='/register' exact element={<Register/>}/>
+  </Routes>
+  </BrowserRouter>
+>>>>>>> 590deecd4fd8376ee9423a7a8d33583f383e33e2
   );
 }
 
