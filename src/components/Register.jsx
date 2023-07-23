@@ -21,9 +21,14 @@ const Register = () => {
 
     axios.post("http://localhost:5000/api/user", dataToSend)
       .then((response) => {
-        if (response.data.message === "Registered Successfully") {
+        console.log('response')
+        console.log(response.data.message)
+        if (response.data.message === "Registered Succesfully") {
           alert(response.data.message);
           navigate('/');
+        }
+        else {
+            alert('Please try once again');   
         }
       })
       .catch(err => console.log(err));

@@ -37,9 +37,9 @@ const AddCurriculum = (props) => {
       axios
         .post("http://localhost:5000/api/curriculumlist", data)
         .then((response) => {
-          if (response.data.message === "Created Successfully") {
+          if (response.data.message === "Created Succesfully") {
             alert(response.data.message);
-            navigate("/admin");
+            navigate('/admin');
           } else {
             alert(response.data.message);
           }
@@ -53,9 +53,9 @@ const AddCurriculum = (props) => {
       axios
         .put("http://localhost:5000/api/curriculumlist/" + curriculum._id, curriculum)
         .then((response) => {
-          if (response.data.message === "Updated Successfully") {
+          if (response.data.message === "Updated successfully") {
             alert(response.data.message);
-            navigate("/admin");
+            navigate('/admin');
           } else {
             alert(response.data.message);
           }
