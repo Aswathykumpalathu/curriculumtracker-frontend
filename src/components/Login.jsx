@@ -39,7 +39,7 @@ const Login = () => {
       <div className="card p-4">
         <div className="card-body text-center">
           <img
-            src="logo.png"
+            src="/Curriculum Tracker-1 (1).png"
             alt="Logo"
             className="mb-4"
             style={{ width: '100px', height: '100px', borderRadius: '50%' }}
