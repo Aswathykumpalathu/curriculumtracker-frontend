@@ -30,6 +30,7 @@ const AddCurriculum = (props) => {
       institution: curriculum.institution,
       hours: curriculum.hours,
       admin_upload_url: curriculum.admin_upload_url,
+      status :'InProgress'
     };
 
     if (props.method === "post") {
