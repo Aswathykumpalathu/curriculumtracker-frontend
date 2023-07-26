@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './Login.css';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -35,28 +36,28 @@ const Login = () => {
   };
 
   return (
-    <div className="container-fluid vh-100 d-flex justify-content-center align-items-center bg-primary">
-      <div className="card p-4">
+    <div className="login container-fluid vh-100 d-flex justify-content-center align-items-center">
+      <div className="cardl card p-5 bg-rgba(255, 255, 255, 0.15)">
         <div className="card-body text-center">
           <img
             src="/Curriculum Tracker-1 (1).png"
             alt="Logo"
             className="mb-4"
-            style={{ width: '100px', height: '100px', borderRadius: '50%' }}
+            style={{ width: '150px', height: '150px', borderRadius: '50%' }}
           />
-          <h2 className="mb-4">Welcome !</h2>
+          <h2 className="welcome mb-4">Welcome !</h2>
           <div className="mb-3">
-            <label htmlFor="username" className="form-label">Name</label>
-            <input type="text" className="form-control" id="username" name="username" onChange={inputHandler} />
+            <label htmlFor="email" className="form-label">email</label>
+            <input type="text" className="box form-control" id="email" name="email" placeholder='youremail@gmail.com' onChange={inputHandler} />
           </div>
           <div className="mb-3">
             <label htmlFor="password" className="form-label">Password</label>
-            <input type="password" className="form-control" id="password" name="password" onChange={inputHandler} />
+            <input type="password" className="box form-control" id="password" name="password" placeholder='********' onChange={inputHandler} />
           </div>
           <div className="mb-3">
-            <button className="btn btn-success" onClick={addHandler}>Submit</button>
+            <button className="btn1 btn btn-success" onClick={addHandler}>Submit</button>
           </div>
-          <a className="btn btn-link" href="/register">Register</a>
+          <a className="reg1 btn btn-link " href="/register">Register</a>
         </div>
       </div>
     </div>

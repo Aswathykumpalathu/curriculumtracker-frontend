@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
+import './Register.css';
 const Register = () => {
   const [inputs, setInputs] = useState({});
   const navigate = useNavigate();
@@ -35,11 +35,12 @@ const Register = () => {
   };
 
   return (
-    <div className="container mb-5 mt-4">
+    <div className="register ">
+    <div className="cont container ">
       <div className="row">
-        <div className="col-lg-12">
-          <div className="card border-secondary">
-            <div className="card-header">Register</div>
+        <div className="col-lg-12  ">
+          <div className="card2 card   bg-rgba(255, 255, 255, 0.15)">
+            <div className="regist card-header">Register</div>
             <div className="card-body p-5 bg-gradient-blue-card-1">
               <div className="row g-3">
                 <div className="col-12 col-sm-6 col-md-6 col-lg-6">
@@ -67,11 +68,12 @@ const Register = () => {
                   <input type="password" className="form-control" name="password" onChange={inputHandler} />
                 </div>
               </div>
-              <button className="btn btn-success mt-3" onClick={submitHandler}>Submit</button>
+              <button className="btn2 btn btn-success mt-3" onClick={submitHandler}>Submit</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
