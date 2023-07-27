@@ -1,0 +1,12 @@
+h1{
+    color: rgb(36, 36, 57);
+    font-family: 'Merriweather', serif;
+   
+   text-shadow: 6px 3px 0px rgba(211, 9, 9, 0.6);
+  
+}
+h2{
+    color: rgb(238, 196, 242);
+    text-shadow: 4px 3px 3px rgba(128, 0, 0, 1);
+    font-family: 'Merriweather', serif;
+}
