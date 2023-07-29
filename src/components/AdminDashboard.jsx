@@ -7,10 +7,8 @@ const AdminDashboard = () => {
     const[update,setUpdate]=useState(false);
     const[singleValue,setSingleValue]=useState([]);
   const [userrole, setUserRole] = useState('');
-  const [userToken, setUserToken] = useState(sessionStorage.getItem("userToken"));
-  const [userId, setUserID] = useState(sessionStorage.getItem("userId"));
   const fetchDataFromApi= ()=>{
-    axios.get("http://localhost:5000/api/curriculumlist/"+userToken  ).then(
+    axios.get("http://localhost:5000/api/curriculumlist/" ).then(
     (response)=>{
         console.log(response.data)
         setData(response.data)
@@ -22,11 +20,7 @@ const AdminDashboard = () => {
     setUserRole(storedUserRole);
     fetchDataFromApi();
   }, []); 
-
-  
-  
   const deleteCurriculum =(id)=>{
-   
     console.log('id delete');
     console.log(id);
     axios.delete("http://localhost:5000/api/curriculumlist/" + id)
@@ -34,7 +28,6 @@ const AdminDashboard = () => {
         alert(response.data.message);
         window.location.reload(false);
     })
-  
 }
 
 const updateCurriculum =(val)=>{

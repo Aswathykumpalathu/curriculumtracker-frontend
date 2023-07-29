@@ -6,7 +6,6 @@ const AddCurriculum = (props) => {
   const navigate = useNavigate();
   const [userToken, setUserToken] = useState(sessionStorage.getItem("userToken"));
   const [userId, setUserID] = useState(sessionStorage.getItem("userId"));
-
   const [curriculum, setCurriculum] = useState({
     ...props.data,
     area: props.data?.area || '',
@@ -52,7 +51,7 @@ const AddCurriculum = (props) => {
 
     if (props.method === "put") {
       axios
-        .put("http://localhost:5000/api/curriculumlist/" + curriculum._id,data)
+        .put("http://localhost:5000/api/curriculumlist/" + curriculum._id, curriculum)
         .then((response) => {
           if (response.data.message === "Updated successfully") {
             alert(response.data.message);
@@ -72,7 +71,7 @@ const AddCurriculum = (props) => {
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="card">
-            <div className="card-header" class="">Create Curriculum</div>
+            <div className="card-header">Create Curriculum</div>
             <div className="card-body">
               <div className="mb-3">
                 <label htmlFor="requirementname">Requirement</label>

@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
-import { Navigate } from 'react-router-dom';
 const Header = () => {
     const [userrole, setUserRole] = useState('');
     useEffect(() => {
         const storedUserRole = sessionStorage.getItem('userrole');
         setUserRole(storedUserRole);
       }, []);
-
-
-
-
-      
       if (userrole === 'admin') {
         return (
             <div>
@@ -25,7 +19,7 @@ const Header = () => {
               <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="/addcurriculum">Create Curriculum</a>
                 <a class="nav-link" href="/admin">View Curriculum</a>
-                <a class="nav-link " href="/" style={{ color: 'white' }} >Logout</a>
+                <a class="nav-link " href="/" style={{ color: 'white' }}>Logout</a>
                 
               </div>
             </div>
