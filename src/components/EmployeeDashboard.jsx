@@ -75,8 +75,11 @@ const EmployeeDashboard = () => {
                   <TableCell>{value.institution}</TableCell>
                   <TableCell>{value.category}</TableCell>
                   <TableCell>{value.hours}</TableCell>
-                  <TableCell><Button variant="contained" color="success"  size="small"><Link to={`update/${value._id}`}>Update</Link></Button>  
-                </TableCell>
+                <TableCell>{value.status === 'InProgress' ? (
+    <Button variant="contained" color="success"  size="small"><Link to={`update/${value._id}`}>Update</Link></Button>
+  ) : (
+    null
+  )}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
