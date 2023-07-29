@@ -30,6 +30,8 @@ const AddCurriculum = (props) => {
       institution: curriculum.institution,
       hours: curriculum.hours,
       admin_upload_url: curriculum.admin_upload_url,
+      faculty_comments:"",
+      faculty_upload_url:"",
       status :'InProgress'
     };
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Table, TableBody, TableCell, TextField, Typography, TableHead, TableRow } from '@mui/material';
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 const EmployeeDashboard = () => {
   const [search, setSearch] = useState('');
   const [data, setData] = useState([]);
@@ -63,6 +63,7 @@ const EmployeeDashboard = () => {
                 <TableCell>Institution</TableCell>
                 <TableCell>Category</TableCell>
                 <TableCell>Hours</TableCell>
+                <TableCell>Response</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -74,6 +75,8 @@ const EmployeeDashboard = () => {
                   <TableCell>{value.institution}</TableCell>
                   <TableCell>{value.category}</TableCell>
                   <TableCell>{value.hours}</TableCell>
+                  <TableCell><Button variant="contained" color="success"  size="small"><Link to={`update/${value._id}`}>Update</Link></Button>  
+                </TableCell>
                 </TableRow>
               ))}
             </TableBody>

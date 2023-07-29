@@ -6,7 +6,7 @@ import Register from './components/Register';
 import AdminDashboard from './components/AdminDashboard';
 import EmployeeDashboard from './components/EmployeeDashboard';
 import AddCurriculum from './components/AddCurriculum';
-
+import UpdateResponse from './components/UpdateResponse';
 function App() {
   return (
     <div className="App">
@@ -17,7 +17,7 @@ function App() {
      <Route path="/admin" exact element={<Main child={<AdminDashboard/>}/>} />
      <Route path="/employee" exact element={<Main child={<EmployeeDashboard/>}/>} />
      <Route path="/addcurriculum" exact element= {<Main child={<AddCurriculum method="post" data = {{requirementname: "", area: "", institution: "", category: "" , hours:"",  admin_upload_url:""}} /> } />} />
-    
+     <Route path="employee/update/:id/" exact element={<Main child={<UpdateResponse/>}/>} />
   
     
      </Routes>

@@ -77,6 +77,7 @@ let finalJSX=  <div>
 <th scope="col">Institution</th>
 <th scope="col">Category</th>
 <th scope="col">Hours</th>
+<th scope="col">Status</th>
 <th scope="col">Del</th>
 <th scope="col">Update</th>
 </tr>
@@ -91,6 +92,7 @@ let finalJSX=  <div>
       <td>{value.institution}</td>
       <td>{value.category}</td>
       <td>{value.hours}</td>
+      <td>{value.status}</td>
       <td><button class="btn btn-danger" onClick={()=>deleteCurriculum(value._id)}>Delete</button></td>
       <td> <button class="btn btn-success" onClick={()=>updateCurriculum(value)}>Update</button></td>
       </tr>
