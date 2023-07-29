@@ -1,9 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import AddCurriculum from './AddCurriculum';
+import { Button,  TextField, Typography, TableHead, TableRow } from '@mui/material';
 import './Nav.css';
 import './Admin.css';
 const AdminDashboard = () => {
+  const [search, setSearch] = useState('');
     const [data,setData]=useState([]);
     const[update,setUpdate]=useState(false);
     const[singleValue,setSingleValue]=useState([]);
@@ -37,8 +39,33 @@ const updateCurriculum =(val)=>{
 
 
 }
+const searchCurriculum = () => {
+  console.log('button clicked');
+  // Convert the search state to an object with the field "query"
+  const searchQuery = { query: search };
+  axios.post("http://localhost:5000/api/curriculum/search",  { query: search })
+    .then((response) => {
+      console.log(response.data);
+      setData(response.data);
+    })
+    .catch((error) => {
+      console.error('Error fetching data:', error);
+    });
+};
 let finalJSX=  <div>
   <h1>CURRICULUM DETAILES</h1>
+  <Typography>Search</Typography>
+        <TextField
+          name='search'
+          variant='outlined'
+          color="success"
+          onChange={(e) => setSearch(e.target.value)}
+          value={search}
+          label='Search'
+          fullWidth
+          margin='normal'
+        />
+        <Button onClick={searchCurriculum} variant='contained' color='primary' fullWidth>Search</Button>
     <div className="container pt-5 mb-5">
 <div>
 <table class="table">
