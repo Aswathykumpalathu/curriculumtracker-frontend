@@ -15,12 +15,13 @@
     font-family: 'Alegreya', serif;
     font-weight: 900;
     font-size: xx-large;
-    color: rgb(222, 20, 20);
+    color: rgb(71, 16, 16);
 }
 .card2{
     
-    background-color: rgba(97, 64, 64, 0.15);
-   box-shadow: 0 8px 32px 0 rgba(7, 7, 7, 0.37);
+    background-color: rgba(255, 251, 251, 0.15);
+  
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    backdrop-filter: blur(8.5px);
    border-radius: 10px;
    color: rgb(35, 20, 59);

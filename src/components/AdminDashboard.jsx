@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import AddCurriculum from './AddCurriculum';
-
+import './Nav.css';
+import './Admin.css';
 const AdminDashboard = () => {
     const [data,setData]=useState([]);
     const[update,setUpdate]=useState(false);
@@ -37,7 +38,8 @@ const updateCurriculum =(val)=>{
 
 }
 let finalJSX=  <div>
-    <div className="container mt-5 pt-5">
+  <h1>CURRICULUM DETAILES</h1>
+    <div className="container pt-5 mb-5">
 <div>
 <table class="table">
 <thead>
