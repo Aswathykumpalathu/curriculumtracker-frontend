@@ -1,12 +1,45 @@
+body{
+    
+    background-size: cover;
+    background-position: fixed;
+    background-image: url(../images/new.jpg);
+  
+  }
 h1{
-    color: rgb(36, 36, 57);
+    color: rgb(239, 233, 232);
     font-family: 'Merriweather', serif;
    
-   text-shadow: 6px 3px 0px rgba(211, 9, 9, 0.6);
+   text-shadow: 6px 3px 0px rgba(53, 27, 27, 0.6);
+   margin-top: 50px;
   
 }
 h2{
     color: rgb(238, 196, 242);
     text-shadow: 4px 3px 3px rgba(128, 0, 0, 1);
     font-family: 'Merriweather', serif;
+}
+.search{
+    max-width: 800px;
+   background-color: rgb(240, 235, 235);
+   border-radius: 81px; 
+    
+}
+.btnsearch{
+    max-width: 80px;
+    align-items: last baseline;
+    border-radius: 81px;
+  
+}
+.createc{
+    height: 90px;
+    padding: 30px;
+    font-weight: 900;
+  font-size: x-large;
+  background-color: rgb(205, 204, 203) ;
+}
+.form-controlc{
+    background-color: rgb(205, 204, 203) ;
+}
+.tble{
+    font-weight: 500;
 }

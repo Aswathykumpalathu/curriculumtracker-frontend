@@ -89,19 +89,19 @@ const Register = () => {
               <div className="row g-3">
                 <div className="col-12 col-sm-6 col-md-6 col-lg-6">
                   <label htmlFor="username">UserName</label>
-                  <input type="text" className="form-control" name="username" onChange={inputHandler} />
+                  <input type="text" className="outline form-control" name="username" onChange={inputHandler} />
                   {errors.username && <div className="text-danger">{errors.username}</div>}
                 </div>
                 <div className="col-12 col-sm-6 col-md-6 col-lg-6">
                   <label htmlFor="email">Email Id</label>
-                  <input type="text" className="form-control" name="email" onChange={inputHandler} />
+                  <input type="text" className="outline form-control" name="email" onChange={inputHandler} />
                   {errors.email && <div className="text-danger">{errors.email}</div>}
                 </div>
               </div>
               <div className="row">
                 <div className="col-12">
                   <label htmlFor="address">Address</label>
-                  <textarea name="address" onChange={inputHandler} id="" cols="30" rows="6" className="form-control"></textarea>
+                  <textarea name="address" onChange={inputHandler} id="" cols="30" rows="6" className="outline form-control"></textarea>
                   {errors.address && <div className="text-danger">{errors.address}</div>}
                   {/* <input type="text" className="form-control" name="address" onChange={inputHandler} /> */}
                 </div>
@@ -109,12 +109,12 @@ const Register = () => {
               <div className="row">
                 <div className="col-12 col-sm-6 col-md-6 col-lg-6">
                   <label htmlFor="phone">Phone</label>
-                  <input type="text" className="form-control" name="phone" onChange={inputHandler} />
+                  <input type="text" className="outline form-control" name="phone" onChange={inputHandler} />
                   {errors.phone && <div className="text-danger">{errors.phone}</div>}
                 </div>
                 <div className="col-12 col-sm-6 col-md-6 col-lg-6">
                   <label htmlFor="password">Password</label>
-                  <input type="password" className="form-control" name="password" onChange={inputHandler} />
+                  <input type="password" className="outline form-control" name="password" onChange={inputHandler} />
                   {errors.password && <div className="text-danger">{errors.password}</div>}
                 </div>
               </div>

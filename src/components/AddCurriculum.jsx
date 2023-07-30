@@ -73,15 +73,15 @@ const AddCurriculum = (props) => {
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="card">
-            <div className="card-header">Create Curriculum</div>
+            <div className="createc card-header">Create Curriculum</div>
             <div className="card-body">
               <div className="mb-3">
                 <label htmlFor="requirementname">Requirement</label>
-                <input type="text" className="form-control" name="requirementname" value={curriculum.requirementname} onChange={inputHandler} placeholder="Requirement" />
+                <input type="text" className="form-controlc form-control" name="requirementname" value={curriculum.requirementname} onChange={inputHandler} placeholder="Requirement" />
               </div>
               <div className="mb-3">
                 <label htmlFor="area">Area</label>
-                <select className="form-select" name="area" value={curriculum.area} onChange={inputHandler}>
+                <select className="form-controlc form-select" name="area" value={curriculum.area} onChange={inputHandler}>
                   <option value="">Select an area</option>
                   <option value="FSD">FSD</option>
                   <option value="ML-AI">ML-AI</option>
@@ -90,11 +90,11 @@ const AddCurriculum = (props) => {
               </div>
               <div className="mb-3">
                 <label htmlFor="institution">Institution</label>
-                <input type="text" className="form-control" name="institution" value={curriculum.institution} onChange={inputHandler} placeholder="Institution" />
+                <input type="text" className="form-controlc form-control" name="institution" value={curriculum.institution} onChange={inputHandler} placeholder="Institution" />
               </div>
               <div className="mb-3">
                 <label htmlFor="category">Category</label>
-                <select className="form-select" name="category" value={curriculum.category} onChange={inputHandler}>
+                <select className="form-controlc form-select" name="category" value={curriculum.category} onChange={inputHandler}>
                   <option value="">Select a category</option>
                   <option value="Retail">Retail</option>
                   <option value="Academic">Academic</option>
@@ -102,11 +102,11 @@ const AddCurriculum = (props) => {
               </div>
               <div className="mb-3">
                 <label htmlFor="hours">Hours</label>
-                <input type="text" className="form-control" name="hours" value={curriculum.hours} onChange={inputHandler} placeholder="Hours" />
+                <input type="text" className="form-controlc form-control" name="hours" value={curriculum.hours} onChange={inputHandler} placeholder="Hours" />
               </div>
               <div className="mb-3">
                 <label htmlFor="admin_upload_url">Upload</label>
-                <input type="text" className="form-control" name="admin_upload_url" value={curriculum.admin_upload_url} onChange={inputHandler} placeholder="Upload" />
+                <input type="text" className="form-controlc form-control" name="admin_upload_url" value={curriculum.admin_upload_url} onChange={inputHandler} placeholder="Upload" />
               </div>
               <div className="mb-3">
                 <button className="btn btn-success" onClick={addCurriculum}>Submit</button>

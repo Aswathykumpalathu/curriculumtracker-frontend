@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Button, Table, TableBody, TableCell, TextField, Typography, TableHead, TableRow } from '@mui/material';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './Emp.css';
+import './Nav.css';
 const EmployeeDashboard = () => {
   const [search, setSearch] = useState('');
   const [data, setData] = useState([]);
@@ -39,10 +41,10 @@ const EmployeeDashboard = () => {
   };
 
   return (
-    <div>
+    <div className='employeedash'>
       <div className="container mt-5 pt-5">
       <Typography>Search</Typography>
-        <TextField
+        <TextField className='search1'
           name='search'
           variant='outlined'
           color="success"
@@ -52,7 +54,7 @@ const EmployeeDashboard = () => {
           fullWidth
           margin='normal'
         />
-        <Button onClick={searchCurriculum} variant='contained' color='primary' fullWidth>Search</Button>
+        <Button className='btnsearch1' onClick={searchCurriculum} variant='contained' color='primary' fullWidth>Search</Button>
         <div>
           <Table>
             <TableHead>
@@ -76,7 +78,7 @@ const EmployeeDashboard = () => {
                   <TableCell>{value.category}</TableCell>
                   <TableCell>{value.hours}</TableCell>
                 <TableCell>{value.status === 'InProgress' ? (
-    <Button variant="contained" color="success"  size="small"><Link to={`update/${value._id}`}>Update</Link></Button>
+    <Button variant="contained"  size="small"><Link to={`update/${value._id}`} className='btnupdt'>Update</Link></Button>
   ) : (
     null
   )}</TableCell>

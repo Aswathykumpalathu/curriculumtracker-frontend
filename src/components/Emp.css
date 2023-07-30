@@ -1,0 +1,36 @@
+.employeedash{
+    display: flex;
+    background-size: cover;
+    background-position: fixed;
+        /* background-size: cover;
+        background-position: fixed; */
+        background-image: url(../images/new.jpg);
+      /* box-sizing: border-box; */
+      
+}
+.search1{
+    max-width: 800px;
+   background-color: rgb(240, 235, 235);
+   border-radius: 81px; 
+}
+.btnsearch1{
+    max-width: 80px;
+    align-items: last baseline;
+    border-radius: 81px;
+}
+.btnupdt{
+    color: rgb(247, 249, 251);
+    text-decoration: none;
+    background-color: rgb(37, 113, 234);
+   
+}
+.tbltext{
+    color: rgb(247, 250, 252);
+}
+.rf{
+    background-color: rgb(24, 24, 246);
+    color: bisque;
+}
+.res{
+    margin-top: 130px;
+}

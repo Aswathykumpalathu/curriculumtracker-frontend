@@ -63,7 +63,7 @@ const searchCurriculum = () => {
 let finalJSX=  <div>
   <h1>CURRICULUM DETAILES</h1>
   <Typography>Search</Typography>
-        <TextField
+        <TextField  className='search'
           name='search'
           variant='outlined'
           color="success"
@@ -73,7 +73,7 @@ let finalJSX=  <div>
           fullWidth
           margin='normal'
         />
-        <Button onClick={searchCurriculum} variant='contained' color='primary' fullWidth>Search</Button>
+        <Button className='btnsearch' onClick={searchCurriculum} variant='contained' color='primary' fullWidth>Search</Button>
     <div className="container pt-5 mb-5">
 <div>
 <table class="table">

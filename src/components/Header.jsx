@@ -17,9 +17,9 @@ const Header = () => {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="/addcurriculum">Create Curriculum</a>
+                <a class="create nav-link " aria-current="page" href="/addcurriculum">Create Curriculum</a>
                 <a class="nav-link" href="/admin">View Curriculum</a>
-                <a class="nav-link " href="/" style={{ color: 'white' }}>Logout</a>
+                <a class="create nav-link " href="/">Logout</a>
                 
               </div>
             </div>

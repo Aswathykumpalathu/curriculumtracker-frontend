@@ -2,6 +2,7 @@ import Header from './Header'
 import axios from 'axios'
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState }  from 'react'
+import './Emp.css';
 const UpdateResponse = (props) => {
     const [faculty_comments, setfaculty_comments] = useState("");
     const [faculty_upload_url, setfaculty_upload_url] = useState("");
@@ -41,20 +42,20 @@ const updateResponse=() => {
      <div class="testbox">
     <form action="/employee">
       <div class="banner">
-        <h1>Response Form</h1>
-      </div>
+        <h1 className='res'>Response Form</h1>
+      </div><br /><br />
       <div class="colums">
         <div class="item">
           <label for="fname">Notes<span>*</span></label>
           <input id="fname" type="text" name="faculty_comments" value={faculty_comments} onChange={(e) => setfaculty_comments(e.target.value)} required/>
-        </div>
+        </div><br /><br />
         <div class="item">
           <label for="lname">Upload<span>*</span></label>
           <input id="lname" type="text" name="faculty_upload_url" value={faculty_upload_url} onChange={(e) => setfaculty_upload_url(e.target.value)} required/>
         </div>
-      </div>
+      </div><br />
       <div class="btn-block">
-        <button type="submit"  onClick={updateResponse}>Submit</button>
+        <button type="submit"  onClick={updateResponse} class='rf'>Submit</button>
       </div>
     </form>
   </div>
