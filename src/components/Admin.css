@@ -28,7 +28,7 @@ h2{
     max-width: 80px;
     align-items: last baseline;
     border-radius: 81px;
-  
+   
 }
 .createc{
     height: 90px;
@@ -40,6 +40,6 @@ h2{
 .form-controlc{
     background-color: rgb(205, 204, 203) ;
 }
-.tble{
-    font-weight: 500;
+.tblcolor{
+    background-color: aliceblue;
 }

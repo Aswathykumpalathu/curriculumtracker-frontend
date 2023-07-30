@@ -46,11 +46,11 @@ const updateResponse=() => {
       </div><br /><br />
       <div class="colums">
         <div class="item">
-          <label for="fname">Notes<span>*</span></label>
+          <label for="fname" className='note'>Notes<span>*</span></label>
           <input id="fname" type="text" name="faculty_comments" value={faculty_comments} onChange={(e) => setfaculty_comments(e.target.value)} required/>
         </div><br /><br />
         <div class="item">
-          <label for="lname">Upload<span>*</span></label>
+          <label for="lname" className='note'>Upload<span>*</span></label>
           <input id="lname" type="text" name="faculty_upload_url" value={faculty_upload_url} onChange={(e) => setfaculty_upload_url(e.target.value)} required/>
         </div>
       </div><br />

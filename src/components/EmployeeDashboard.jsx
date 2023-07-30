@@ -56,7 +56,7 @@ const EmployeeDashboard = () => {
         />
         <Button className='btnsearch1' onClick={searchCurriculum} variant='contained' color='primary' fullWidth>Search</Button>
         <div>
-          <Table>
+          <Table className='tblcolor'>
             <TableHead>
               <TableRow>
                 <TableCell>ID</TableCell>

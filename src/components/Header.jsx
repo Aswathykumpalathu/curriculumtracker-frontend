@@ -9,7 +9,7 @@ const Header = () => {
       if (userrole === 'admin') {
         return (
             <div>
-              <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
+              <nav class="navbar navbar-expand-lg bg-transparent  navbar-dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Curriculum Tracker</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@ const Header = () => {
               <div class="navbar-nav">
                 <a class="create nav-link " aria-current="page" href="/addcurriculum">Create Curriculum</a>
                 <a class="nav-link" href="/admin">View Curriculum</a>
-                <a class="create nav-link " href="/">Logout</a>
+                <a class="create nav-link" href="/">Logout</a>
                 
               </div>
             </div>

@@ -7,6 +7,8 @@ import AdminDashboard from './components/AdminDashboard';
 import EmployeeDashboard from './components/EmployeeDashboard';
 import AddCurriculum from './components/AddCurriculum';
 import UpdateResponse from './components/UpdateResponse';
+import '../src/components/Nav.css';
+import '../src/components/Emp.css';
 function App() {
   return (
     <div className="App">
