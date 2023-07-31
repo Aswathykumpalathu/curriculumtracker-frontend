@@ -65,6 +65,7 @@ const EmployeeDashboard = () => {
                 <TableCell>Institution</TableCell>
                 <TableCell>Category</TableCell>
                 <TableCell>Hours</TableCell>
+                <TableCell>url</TableCell>
                 <TableCell>Response</TableCell>
               </TableRow>
             </TableHead>
@@ -77,6 +78,7 @@ const EmployeeDashboard = () => {
                   <TableCell>{value.institution}</TableCell>
                   <TableCell>{value.category}</TableCell>
                   <TableCell>{value.hours}</TableCell>
+                  <TableCell><a href={value.faculty_upload_url}>Download</a></TableCell>
                 <TableCell>{value.status === 'InProgress' ? (
     <Button variant="contained"  size="small"><Link to={`update/${value._id}`} className='btnupdt'>Update</Link></Button>
   ) : (
