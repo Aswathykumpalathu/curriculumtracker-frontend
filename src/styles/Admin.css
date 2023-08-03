@@ -2,7 +2,7 @@ body{
     
     background-size: cover;
     background-position: fixed;
-    background-image: url(../images/new.jpg);
+    background-image: url(../images/vv.jpg);
   
   }
 h1{
@@ -11,6 +11,7 @@ h1{
    
    text-shadow: 6px 3px 0px rgba(53, 27, 27, 0.6);
    margin-top: 50px;
+   margin-bottom: 60px;
   
 }
 h2{
@@ -26,10 +27,10 @@ h2{
 }
 .btnsearch{
     max-width: 80px;
-    align-items: last baseline;
     border-radius: 81px;
    
 }
+
 .createc{
     height: 90px;
     padding: 30px;

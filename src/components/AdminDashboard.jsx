@@ -2,8 +2,9 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import AddCurriculum from './AddCurriculum';
 import { Button,  TextField, Typography, TableHead, TableRow } from '@mui/material';
-import './Nav.css';
-import './Admin.css';
+import '../styles/Nav.css';
+import '../styles/Admin.css';
+
 const AdminDashboard = () => {
   const [search, setSearch] = useState('');
     const [data,setData]=useState([]);
@@ -63,7 +64,7 @@ const searchCurriculum = () => {
 let finalJSX=  <div>
   <h1>CURRICULUM DETAILES</h1>
   <Typography>Search</Typography>
-        <TextField  className='search'
+        <TextField  className='search mt-1'
           name='search'
           variant='outlined'
           color="success"
@@ -73,9 +74,10 @@ let finalJSX=  <div>
           fullWidth
           margin='normal'
         />
-        <Button className='btnsearch' onClick={searchCurriculum} variant='contained' color='primary' fullWidth>Search</Button>
-    <div className="container pt-5 mb-5">
+        <Button className='btnsearch m-2' onClick={searchCurriculum} variant='contained' color='primary'>Search</Button>
+        <div className="container">
 <div>
+  
 <table class="table">
 <thead>
 <tr>

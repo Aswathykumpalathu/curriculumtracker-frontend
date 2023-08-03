@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Button, Table, TableBody, TableCell, TextField, Typography, TableHead, TableRow } from '@mui/material';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import './Emp.css';
-import './Nav.css';
+import '../styles/Emp.css';
+import '../styles/Admin.css';
+import '../styles/Nav.css';
 const EmployeeDashboard = () => {
   const [search, setSearch] = useState('');
   const [data, setData] = useState([]);
@@ -41,10 +42,11 @@ const EmployeeDashboard = () => {
   };
 
   return (
-    <div className='employeedash'>
-      <div className="container mt-5 pt-5">
-      <Typography>Search</Typography>
-        <TextField className='search1'
+    <div>
+      <div className="container">
+      <h1>CURRICULUM DETAILES</h1>
+      <Typography className='mt-4'>Search</Typography>
+        <TextField className='search mt-1'
           name='search'
           variant='outlined'
           color="success"
@@ -53,23 +55,23 @@ const EmployeeDashboard = () => {
           label='Search'
           fullWidth
           margin='normal'
-        />
-        <Button className='btnsearch1' onClick={searchCurriculum} variant='contained' color='primary' fullWidth>Search</Button>
+        />  
+       <Button className='btnsearch m-2' onClick={searchCurriculum} variant='contained' color='primary'>Search</Button>
         <div>
           <Table className='tblcolor'>
-            <TableHead>
+            <TableHead className='tblhead'>
               <TableRow>
-                <TableCell>ID</TableCell>
-                <TableCell>Requirement</TableCell>
-                <TableCell>Area</TableCell>
-                <TableCell>Institution</TableCell>
-                <TableCell>Category</TableCell>
-                <TableCell>Hours</TableCell>
-                <TableCell>url</TableCell>
-                <TableCell>Response</TableCell>
+                <TableCell><b>ID</b></TableCell>
+                <TableCell><b>Requirement</b></TableCell>
+                <TableCell><b>Area</b></TableCell>
+                <TableCell><b>Institution</b></TableCell>
+                <TableCell><b>Category</b></TableCell>
+                <TableCell><b>Hours</b></TableCell>
+                <TableCell><b>url</b></TableCell>
+                <TableCell><b>Response</b></TableCell>
               </TableRow>
             </TableHead>
-            <TableBody>
+            <TableBody className='tblbody'>
               {data.map((value, index) => (
                 <TableRow key={index}>
                   <TableCell>{index}</TableCell>

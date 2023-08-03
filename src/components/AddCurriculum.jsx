@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
+import '../styles/Nav.css';
 const AddCurriculum = (props) => {
   const navigate = useNavigate();
   const [userToken, setUserToken] = useState(sessionStorage.getItem("userToken"));
