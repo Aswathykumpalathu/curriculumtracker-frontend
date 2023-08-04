@@ -7,6 +7,7 @@ import AdminDashboard from './components/AdminDashboard';
 import EmployeeDashboard from './components/EmployeeDashboard';
 import AddCurriculum from './components/AddCurriculum';
 import UpdateResponse from './components/UpdateResponse';
+import UnauthorizedMessage from './components/UnauthorizedMessage';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
      <Route path="/employee" exact element={<Main child={<EmployeeDashboard/>}/>} />
      <Route path="/addcurriculum" exact element= {<Main child={<AddCurriculum method="post" data = {{requirementname: "", area: "", institution: "", category: "" , hours:"",  admin_upload_url:""}} /> } />} />
      <Route path="employee/update/:id/" exact element={<Main child={<UpdateResponse/>}/>} />
-  
+     <Route path="/unauth" exact element={<UnauthorizedMessage/>} />
     
      </Routes>
      </BrowserRouter>
