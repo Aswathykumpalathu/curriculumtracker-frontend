@@ -44,3 +44,36 @@ h2{
 .tblcolor{
     background-color: aliceblue;
 }
+.table-container {
+    background-color: #a01a1a; /* Light ash color */
+    padding: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #d2cece;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .table th {
+    background-color: rgb(178, 183, 183); /* Light ash color for table header */
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #0a0a3e; /* Alternate background color for even rows */
+  }
+  
+  .table a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+  }
+  
+  .table a:hover {
+    text-decoration: underline;
+  }

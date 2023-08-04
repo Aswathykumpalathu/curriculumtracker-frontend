@@ -91,7 +91,7 @@ const EmployeeDashboard = () => {
             <TableBody className='tblbody'>
               {data.map((value, index) => (
                 <TableRow key={index}>
-                  <TableCell>{index}</TableCell>
+                  <TableCell>{index+1}</TableCell>
                   <TableCell>{value.requirementname}</TableCell>
                   <TableCell>{value.area}</TableCell>
                   <TableCell>{value.institution}</TableCell>

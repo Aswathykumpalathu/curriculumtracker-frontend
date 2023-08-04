@@ -86,6 +86,9 @@ const AddCurriculum = (props) => {
                   <option value="FSD">FSD</option>
                   <option value="ML-AI">ML-AI</option>
                   <option value="DSA">DSA</option>
+                  <option value="DSA">RPA</option>
+                  <option value="DSA">ST</option>
+                  <option value="DSA">CSA</option>
                 </select>
               </div>
               <div className="mb-3">
@@ -98,6 +101,8 @@ const AddCurriculum = (props) => {
                   <option value="">Select a category</option>
                   <option value="Retail">Retail</option>
                   <option value="Academic">Academic</option>
+                  <option value="Academic">Corporate</option>
+                  <option value="Academic">Govt</option>
                 </select>
               </div>
               <div className="mb-3">
