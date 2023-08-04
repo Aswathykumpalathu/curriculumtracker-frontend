@@ -71,7 +71,7 @@ const Register = () => {
           navigate('/');
         }
         else {
-            alert('Please try once again');   
+            alert(response.data.message);   
         }
       })
       .catch(err => console.log(err));

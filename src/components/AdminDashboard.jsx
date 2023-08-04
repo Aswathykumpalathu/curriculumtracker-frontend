@@ -87,6 +87,7 @@ let finalJSX=  <div>
 <th scope="col">Institution</th>
 <th scope="col">Category</th>
 <th scope="col">Hours</th>
+<th scope="col">Download</th>
 <th scope="col">Status</th>
 <th scope="col"></th>
 <th scope="col"></th>
@@ -97,12 +98,13 @@ let finalJSX=  <div>
 
 {data.map((value,index)=>{
         return<tr key={index}>
-            <td>{index}</td>
+            <td>{index + 1}</td>
       <td>{value.requirementname}</td>
       <td>{value.area}</td>
       <td>{value.institution}</td>
       <td>{value.category}</td>
       <td>{value.hours}</td>
+      <td><a href={value.faculty_upload_url}>Response Download</a></td>
       <td>{value.status}</td>
       <td>{value.status === 'InProgress' ? (
     <button class="btn btn-primary" onClick={() => ApproveCurriculum(value._id)}>
